@@ -1,0 +1,307 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arima&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+html{
+  
+scroll-behavior: smooth;
+}
+
+
+
+/* hamburger styling */
+.hamburger{
+  display:none;
+  cursor: pointer;
+}
+.bar{
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px;
+  -webkit-transition: all o.4s ease-in-out;
+  transition: all o.4s ease-in-out;
+  background-color: #13d1ff ;
+}
+.loss{
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+
+.navbar{
+  height: 9vh;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  justify-content: space-between;
+  /* background-color: aquamarine; */
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+nav.sticky {
+  background-color: #13d1ff;
+  transition: 0.5s ease-in-out;
+}
+nav.sticky li a {
+  color: rgb(255, 255, 255);
+}
+nav.sticky .logo {
+  color: rgb(255, 255, 255);
+}
+ul {
+  position: relative;
+
+  display: flex;
+  margin-right: 5em;
+}
+li {
+  position: relative;
+
+  list-style: none;
+  padding: 1em;
+}
+li a {
+  position: relative;
+  transition: 0.8s ease-out;
+
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-weight: bolder;
+}
+li a:hover {
+  position: relative;
+}
+.logo {
+  position: relative;
+  font-size: 30px;
+  font-weight: bolder;
+  margin-left: 3em;
+  color: white;
+  cursor: pointer;
+}
+.hero {
+  width: 100%;
+  height: 48.1vw;
+  background: rgba(0, 0, 0, 0.7)
+    url("../images/marvin-meyer-SYTO3xs06fU-unsplash.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: darken;
+}
+.hero h1 {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding-top: 5em;
+  font-size: 2.5rem;
+}
+.hero span {
+  font-size: 3rem;
+  color: #13d1ff;
+  font-family: "Arima", cursive;
+}
+.hero p {
+  color: white;
+  font-family: "Arima", cursive;
+  text-align: center;
+  font-size: 1.3rem;
+  padding: 2em 10em;
+  font-weight: bold;
+}
+.buttons {
+  display: flex;
+  justify-content: center;
+}
+.button {
+  padding: 0.7em 2em;
+  border: 2px solid rgb(242, 252, 255);
+  border-radius: 7em;
+  margin: 1em;
+  cursor: pointer;
+  background-color: #13d1ff;
+  font-size: 1rem;
+  color: white;
+  transition: 0.6s ease-in;
+}
+.button:hover{
+  background-color: #00ccffbb;
+}
+.about h2 {
+  text-align: center;
+  padding-bottom: 0.7em;
+}
+.about p {
+  font-family: "Arima", cursive;
+}
+.container {
+  margin: 1em 14em;
+}
+.service {
+  width: 100%;
+  height: 25vw;
+
+}
+.ad-h{
+  color: white;
+}
+.content {
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+.content h2 {
+  font-family: "Arima", cursive;
+  font-size: 2.4rem;
+  padding: 1em 0;
+}
+.team h2 {
+  padding: 1em;
+  text-align: center;
+  padding-bottom: 0.7em;
+}
+.card img {
+  height: 50vh;
+  width: 20vw;
+  background-color: aquamarine;
+}
+.process img{
+  width: 18vw;
+  margin: auto;
+
+}
+.process{
+  display: flex;
+  justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.cards {
+  display: flex;
+  justify-content: center;
+}
+.card {
+  margin: 1em;
+}
+.card h5 {
+  text-align: center;
+  font-size: 1.4rem;
+  color: aqua;
+  font-weight: bolder;
+}
+.card p {
+  text-align: center;
+  font-size: 1.4rem;
+  color: rgb(0, 170, 170);
+}
+.ad {
+  width: 100%;
+  height: 17vw;
+  background: rgba(0, 0, 0, 0.7)
+  url("../images/marvin-meyer-SYTO3xs06fU-unsplash.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: darken;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.price h2 {
+  padding: 1em;
+  text-align: center;
+  padding-bottom: 0.7em;
+}
+.plan {
+  width: 21vw;
+  margin: 1em;
+  height: 79vh;
+  padding: 1em 4em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.plan h1 {
+  text-align: center;
+  font-size: 3rem;
+}
+.u-plan {
+  color: white;
+  text-align: center;
+  font-size: 1.4rem;
+  background-color: #13d1ff;
+  width: 15vw;
+}
+.plan p {
+  font-family: "Arima", cursive;
+  text-align: center;
+  padding: 9px;
+}
+.b-plan {
+  font-weight: bolder;
+  margin-top: 1em;
+  font-size: 1rem;
+}
+.plans {
+  display: flex;
+  justify-content: center;
+}
+.plan h1 {
+  text-align: center;
+  font-size: 3rem;
+}
+.contact h2 {
+  text-align: center;
+  font-size: 3rem;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  padding: 0.7em 2em;
+  font-size: 1rem;
+  margin: 0.5em;
+  border-radius: 11px;
+  border: 2px solid gray;
+}
+label {
+  font-size: 1rem;
+}
+footer {
+  text-align: center;
+  background: #13d1ff;
+  color: white;
+  font-weight: bolder;
+  height: 26vh;
+  padding-top: 1em;
+}
+.afflite img {
+  width: 10vw;
+  padding: 0.3em;
+}
+.afflite {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1em;
+}
+
